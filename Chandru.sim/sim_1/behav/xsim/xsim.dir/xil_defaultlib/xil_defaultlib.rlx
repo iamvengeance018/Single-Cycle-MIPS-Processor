@@ -1,0 +1,7 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/HP/Chandru/Chandru.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/HP/Desktop/tb_top.v,1745900884,verilog,,,,top_module_tb,,,,,,,,
+C:/Users/HP/Desktop/top_module.v,1745915900,verilog,,C:/Users/HP/Desktop/tb_top.v,,adder;alu;aludec;controller;datapath;dff;dff_e;instruct_mem;maindec;mips;mux2x1;mux4x1;mux8x1;ram;register_file;shift2;sign_extend;top_module,,,,,,,,

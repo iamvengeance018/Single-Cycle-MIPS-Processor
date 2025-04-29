@@ -1,0 +1,18 @@
+@0000  0x00000000  // Empty memory
+@0004  0x00000000  // Empty memory
+@0008  0x00000000  // Empty memory
+@000C  0x00000000  // Empty memory
+@0010  0x00000000  // Empty memory
+@0014  0x00000000  // Empty memory
+@0018  0x00000000  // Empty memory
+@001C  0x00000000  // Empty memory
+@0020  0x00000000  // Empty memory
+@0024  0x00000000  // Empty memory
+@0028  0x00000000  // Empty memory
+@002C  0x00000000  // Empty memory
+@0030  0x00000000  // Empty memory
+@0034  0x00000000  // Empty memory
+@0038  0x00000000  // Empty memory
+@003C  0x00000000  // Empty memory
+@0040  0x00000000  // Empty memory
+@000F  0x0000000F  // Store value 15 (0x0F) at address 0x000F (t2 value)

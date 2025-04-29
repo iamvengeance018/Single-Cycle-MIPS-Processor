@@ -1,0 +1,21 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module dff
+INFO: [VRFC 10-311] analyzing module dff_e
+INFO: [VRFC 10-311] analyzing module shift2
+INFO: [VRFC 10-311] analyzing module sign_extend
+INFO: [VRFC 10-311] analyzing module mux2x1
+INFO: [VRFC 10-311] analyzing module mux4x1
+INFO: [VRFC 10-311] analyzing module mux8x1
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-311] analyzing module instruct_mem
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_tb

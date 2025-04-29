@@ -1,0 +1,361 @@
+
+*** Running vivado
+    with args -log top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source top_module.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/HP/Chandru/Chandru.srcs/utils_1/imports/synth_1/top_module.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/HP/Chandru/Chandru.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_module -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15204
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1845.512 ; gain = 409.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/HP/Desktop/top_module.v:533]
+INFO: [Synth 8-6157] synthesizing module 'instruct_mem' [C:/Users/HP/Desktop/top_module.v:293]
+INFO: [Synth 8-3876] $readmem data file 'memfile_test1.dat' is read successfully [C:/Users/HP/Desktop/top_module.v:296]
+INFO: [Synth 8-6155] done synthesizing module 'instruct_mem' (0#1) [C:/Users/HP/Desktop/top_module.v:293]
+INFO: [Synth 8-6157] synthesizing module 'ram' [C:/Users/HP/Desktop/top_module.v:247]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/HP/Desktop/top_module.v:264]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (0#1) [C:/Users/HP/Desktop/top_module.v:247]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/HP/Desktop/top_module.v:491]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/HP/Desktop/top_module.v:454]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/HP/Desktop/top_module.v:335]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/HP/Desktop/top_module.v:335]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/HP/Desktop/top_module.v:301]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [C:/Users/HP/Desktop/top_module.v:301]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/HP/Desktop/top_module.v:454]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/HP/Desktop/top_module.v:134]
+INFO: [Synth 8-6157] synthesizing module 'mux2x1' [C:/Users/HP/Desktop/top_module.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'mux2x1' (0#1) [C:/Users/HP/Desktop/top_module.v:60]
+INFO: [Synth 8-6157] synthesizing module 'mux4x1' [C:/Users/HP/Desktop/top_module.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x1' (0#1) [C:/Users/HP/Desktop/top_module.v:64]
+WARNING: [Synth 8-689] width (5) of port connection 'c' does not match port width (32) of module 'mux4x1' [C:/Users/HP/Desktop/top_module.v:191]
+INFO: [Synth 8-6157] synthesizing module 'mux8x1' [C:/Users/HP/Desktop/top_module.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'mux8x1' (0#1) [C:/Users/HP/Desktop/top_module.v:68]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/HP/Desktop/top_module.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/HP/Desktop/top_module.v:25]
+INFO: [Synth 8-6157] synthesizing module 'shift2' [C:/Users/HP/Desktop/top_module.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'shift2' (0#1) [C:/Users/HP/Desktop/top_module.v:50]
+INFO: [Synth 8-6157] synthesizing module 'sign_extend' [C:/Users/HP/Desktop/top_module.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'sign_extend' (0#1) [C:/Users/HP/Desktop/top_module.v:55]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/HP/Desktop/top_module.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/HP/Desktop/top_module.v:76]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/HP/Desktop/top_module.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [C:/Users/HP/Desktop/top_module.v:112]
+INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/HP/Desktop/top_module.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (0#1) [C:/Users/HP/Desktop/top_module.v:30]
+INFO: [Synth 8-6157] synthesizing module 'dff_e' [C:/Users/HP/Desktop/top_module.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'dff_e' (0#1) [C:/Users/HP/Desktop/top_module.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/HP/Desktop/top_module.v:134]
+WARNING: [Synth 8-689] width (1) of port connection 'mem_write_data' does not match port width (32) of module 'datapath' [C:/Users/HP/Desktop/top_module.v:527]
+WARNING: [Synth 8-689] width (32) of port connection 'zero_flag' does not match port width (1) of module 'datapath' [C:/Users/HP/Desktop/top_module.v:527]
+WARNING: [Synth 8-689] width (1) of port connection 'funct' does not match port width (6) of module 'datapath' [C:/Users/HP/Desktop/top_module.v:527]
+WARNING: [Synth 8-689] width (6) of port connection 'rt0' does not match port width (1) of module 'datapath' [C:/Users/HP/Desktop/top_module.v:528]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (0#1) [C:/Users/HP/Desktop/top_module.v:491]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [C:/Users/HP/Desktop/top_module.v:533]
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "mem_reg" dissolved into registers
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/HP/Desktop/top_module.v-517.11 with 1st driver pin 'mips:/instr[1]' [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/HP/Desktop/top_module.v-517.11 with 2nd driver pin 'GND' [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/HP/Desktop/top_module.v-517.11 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/HP/Desktop/top_module.v-517.11 with 1st driver pin 'mips:/instr[2]' [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/HP/Desktop/top_module.v-517.11 with 2nd driver pin 'GND' [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/HP/Desktop/top_module.v-517.11 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/HP/Desktop/top_module.v-517.11 with 1st driver pin 'mips:/instr[3]' [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/HP/Desktop/top_module.v-517.11 with 2nd driver pin 'GND' [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/HP/Desktop/top_module.v-517.11 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/HP/Desktop/top_module.v-517.11 with 1st driver pin 'mips:/instr[4]' [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/HP/Desktop/top_module.v-517.11 with 2nd driver pin 'GND' [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/HP/Desktop/top_module.v-517.11 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/HP/Desktop/top_module.v-517.11 with 1st driver pin 'mips:/instr[5]' [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/HP/Desktop/top_module.v-517.11 with 2nd driver pin 'GND' [C:/Users/HP/Desktop/top_module.v:517]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/HP/Desktop/top_module.v-517.11 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/HP/Desktop/top_module.v:517]
+WARNING: [Synth 8-7129] Port zero_sign[1] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port zero_sign[0] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[1] in module instruct_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[0] in module instruct_mem is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 2556.980 ; gain = 1120.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 2556.980 ; gain = 1120.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 2556.980 ; gain = 1120.797
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.979 . Memory (MB): peak = 2556.980 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/HP/Chandru/Chandru.srcs/constrs_1/new/mipsfpga.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/HP/Chandru/Chandru.srcs/constrs_1/new/mipsfpga.xdc:372]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [C:/Users/HP/Chandru/Chandru.srcs/constrs_1/new/mipsfpga.xdc:377]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [C:/Users/HP/Chandru/Chandru.srcs/constrs_1/new/mipsfpga.xdc:382]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/Users/HP/Chandru/Chandru.srcs/constrs_1/new/mipsfpga.xdc:385]
+Finished Parsing XDC File [C:/Users/HP/Chandru/Chandru.srcs/constrs_1/new/mipsfpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/HP/Chandru/Chandru.srcs/constrs_1/new/mipsfpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2809.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 2809.719 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 2811.141 ; gain = 1374.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 2811.141 ; gain = 1374.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 2811.141 ; gain = 1374.957
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'alucontrol_reg' [C:/Users/HP/Desktop/top_module.v:309]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:07 ; elapsed = 00:03:00 . Memory (MB): peak = 2961.949 ; gain = 1525.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 8     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 40    
+	                8 Bit    Registers := 4096  
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	   5 Input 32768 Bit        Muxes := 1     
+	  19 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input   32 Bit        Muxes := 11    
+	   2 Input   27 Bit        Muxes := 3     
+	   8 Input   27 Bit        Muxes := 1     
+	  24 Input   27 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 14334 
+	   3 Input    8 Bit        Muxes := 1664  
+	   6 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 113   
+	   5 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 34    
+	   8 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design top_module has port leds[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_module has port leds[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_module has port leds[1] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (a/alucontrol_reg[4]) is unused and will be removed from module controller.
+WARNING: [Synth 8-3332] Sequential element (a/alucontrol_reg[3]) is unused and will be removed from module controller.
+WARNING: [Synth 8-3332] Sequential element (a/alucontrol_reg[2]) is unused and will be removed from module controller.
+WARNING: [Synth 8-3332] Sequential element (a/alucontrol_reg[1]) is unused and will be removed from module controller.
+WARNING: [Synth 8-3332] Sequential element (a/alucontrol_reg[0]) is unused and will be removed from module controller.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/top_module.v:89]
+DSP Report: Generating DSP c0, operation Mode is: A*B.
+DSP Report: operator c0 is absorbed into DSP c0.
+DSP Report: operator c0 is absorbed into DSP c0.
+DSP Report: Generating DSP c0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator c0 is absorbed into DSP c0.
+DSP Report: operator c0 is absorbed into DSP c0.
+DSP Report: Generating DSP c0, operation Mode is: A*B.
+DSP Report: operator c0 is absorbed into DSP c0.
+DSP Report: operator c0 is absorbed into DSP c0.
+DSP Report: Generating DSP c0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator c0 is absorbed into DSP c0.
+DSP Report: operator c0 is absorbed into DSP c0.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:11 ; elapsed = 00:05:45 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|datapath    | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|datapath    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|datapath    | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:19 ; elapsed = 00:05:56 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:22 ; elapsed = 00:06:01 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:22 ; elapsed = 00:06:01 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:24 ; elapsed = 00:06:04 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:24 ; elapsed = 00:06:04 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:24 ; elapsed = 00:06:04 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:24 ; elapsed = 00:06:04 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:24 ; elapsed = 00:06:04 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:24 ; elapsed = 00:06:04 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |     8|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:24 ; elapsed = 00:06:04 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:06 ; elapsed = 00:05:54 . Memory (MB): peak = 3033.035 ; gain = 1342.691
+Synthesis Optimization Complete : Time (s): cpu = 00:04:24 ; elapsed = 00:06:04 . Memory (MB): peak = 3033.035 ; gain = 1596.852
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3033.035 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3033.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 39d249df
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 25 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:26 ; elapsed = 00:06:08 . Memory (MB): peak = 3033.035 ; gain = 2002.379
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Chandru/Chandru.runs/synth_1/top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 29 14:26:08 2025...
